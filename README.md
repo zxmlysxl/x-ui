@@ -5,6 +5,7 @@
 
 支持单端口多用户、多协议的 xray 面板，究极缝合怪    
 通过免费的Telegram bot方便快捷地进行监控、管理你的代理服务  
+&#x26A1;`xtls-rprx-vision`与`reality`快速入手请看[这里](https://github.com/FranzKafkaYu/x-ui/wiki/%E8%8A%82%E7%82%B9%E9%85%8D%E7%BD%AE)  
 欢迎大家使用并反馈意见或提交Pr,帮助项目更好的改善  
 如果您觉得本项目对您有所帮助,不妨给个star:star2:支持我  
 或者你恰巧有购买服务器的需求,可以通过文末的赞助部分支持我~ 
@@ -103,6 +104,21 @@ bash <(curl -Ls https://raw.githubusercontent.com/FranzKafkaYu/x-ui/master/insta
 
 </details>  
 
+`用户速览`:  
+<details>
+<summary><b>点击查看效果预览</b></summary> 
+  
+![image](https://user-images.githubusercontent.com/38254177/230761101-20431dd7-5bce-489e-9139-0ceb9ab9a2dc.png)
+
+</details>  
+
+`用户查询`:  
+<details>
+<summary><b>点击查看效果预览</b></summary> 
+  
+![image](https://user-images.githubusercontent.com/38254177/230761252-c283c02d-82a4-46ce-a180-dfab4048180d.png)
+
+</details>  
 
 
 
@@ -139,13 +155,20 @@ xray 状态: 运行
 
 请输入选择 [0-16]: 
 ```
-## 建议系统
-
+# 配置要求  
+## 内存  
+- 128MB minimal/256MB+ recommend  
+## OS  
 - CentOS 7+
 - Ubuntu 16+
 - Debian 8+
 
 # 变更记录  
+- 2023.04.09：支持Reality;支持新的telegram bot控制指令  
+- 2023.03.05：支持用户到期时间限制;随机用户名、密码与端口生成
+- 2023.02.09：支持单端口内用户流量限制与统计；支持VLESS utls配置与分享链接导出  
+- 2022.12.07：添加设备并发限制;细化tls配置,支持minVersion、maxVersion与cipherSuites选择    
+- 2022.11.14：添加xtls-rprx-vision流控选项
 - 2022.10.23：实现全英文支持;增加批量导出分享链接功能；优化页面细节与Telegram通知    
 - 2022.08.11：实现Vmess/Vless/Trojan单端口多用户；增加CPU使用超限提醒  
 - 2022.07.28：增加acme standalone模式申请证书;增加x-ui自动保活机制;优化编译选项以适配更多系统  
@@ -177,6 +200,7 @@ xray 状态: 运行
 - [搬瓦工GIA高端线路](https://bandwagonhost.com/aff.php?aff=65703),仅推荐购买GIA套餐      
 - [Cloudcone性价比主机提供商](https://app.cloudcone.com/?ref=7536)  
 - [Spartan三网4837性价比主机](https://billing.spartanhost.net/aff.php?aff=1875)  
+- USDT TRC20:`TYZ5MAq5YvtCMsjQDq1TJZnMWmjMVGLk2T`  
 
 ## Stargazers over time
 

@@ -657,14 +657,14 @@ show_menu() {
   ${green}11.${plain} check x-ui status
   ${green}12.${plain} check x-ui logs
 ————————————————
-  ${green}13.${plain} enable  x-ui on sysyem startup
-  ${green}14.${plain} disabel x-ui on sysyem startup
+  ${green}13.${plain} enable  x-ui on system startup
+  ${green}14.${plain} disable x-ui on system startup
 ————————————————
   ${green}15.${plain} enable bbr 
   ${green}16.${plain} issuse certs
  "
     show_status
-    echo && read -p "please input a legal number[0-16]: " num
+    echo && read -p "please input a legal number[0-16],input 7 for checking login info:" num
 
     case "${num}" in
     0)
@@ -719,7 +719,7 @@ show_menu() {
         ssl_cert_issue
         ;;
     *)
-        LOGE "please input a legal number[0-16]"
+        LOGE "please input a legal number[0-16],input 7 for checking login info"
         ;;
     esac
 }
